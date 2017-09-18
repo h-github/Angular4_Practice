@@ -1,0 +1,14 @@
+h1{
+    color: #1F4F77;
+    font-size: 2em;
+}
+
+.selected{
+    color: blue;
+    font-weight: bold;
+
+}
+
+ul li{
+    cursor: pointer;
+}

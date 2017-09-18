@@ -1,0 +1,29 @@
+<h1>{{name}}</h1>
+<p><i>{{name}} is at {{street}} in {{city}} in the {{region}} region</i></p>
+
+<br>
+<label>Name: <input [(ngModel)] = "name"></label>
+<br>
+<br>
+<label>
+  <input type="checkbox" [(ngModel)]="hideAddress"/>
+  Show/Hide Address
+</label>
+<br>
+<div [hidden]="hideAddress">
+  <br>
+  <label>Street: <input [(ngModel)] = "street"></label>
+  <br>
+  <br>
+  <label>City: <input [(ngModel)] = "city"></label>
+  <br>
+  <br>
+  <label for="region">Region:</label>
+  <select name="region" [(ngModel)]="region">
+    <option value="East">East</option>
+    <option value="North">North</option>
+    <option value="West">West</option>
+    <option value="South">South</option>
+  </select>
+  <br>
+</div>
